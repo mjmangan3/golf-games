@@ -5,11 +5,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     width: 100%;
-    line-height: 1.5;
   }
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   body.fontLoaded {
