@@ -14,12 +14,18 @@ import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
+import ScoreCards from '../ScoreCards';
+import PartnerGame from '../PartnerGame';
+import NavigationContainer from '../NavigationContainer';
 
-export default function App() {
+export default function App(props) {
   return (
     <div>
+      <NavigationContainer {...props} />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/addScoreCard" component={ScoreCards} />
+        <Route exact path="/partnerGame" component={PartnerGame} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   body.fontLoaded {
